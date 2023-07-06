@@ -79,9 +79,9 @@ public class JogoDaVelha {
                     line = board[2] + board[4] + board[6];
                     break;
             }
-            if (line.equals("AAA")) {
+            if (line.equals("aaa")) {
                 return "A";
-            } else if (line.equals("BBB")) {
+            } else if (line.equals("ZZZ")) {
                 return "B";
             }
         }
@@ -98,15 +98,19 @@ public class JogoDaVelha {
     }
 
     private static void printBoard() {
+        /*Problema é o índice board[6] que
+         falta na posição devida*/
         String createBoard = "/---|---|---\\ \n" + "| " + board[0] + " | " + board[1] + " | " + board[2] + " | \n" +
                 "|-----------| \n" + "| " + board[3] + " | " + board[4] + " | " + board[5] + " | \n" +
-                "|-----------| \n" + "| " + board[6] + " | " + board[7] + " | " + board[8] + " | \n" +
+                "|-----------| \n" + "| " + board[0] + " | " + board[7] + " | " + board[8] + " | \n" +
                 "/---|---|---\\ \n";
         System.out.println(createBoard);
     }
 
     private static void populateEmptyBoard() {
-        for (int a = 0; a < 9; a++) {
+       /*  Problema é por conta do 8, pois o vetor possui
+         9 posições e não 8*/
+        for (int a = 0; a < 8; a++) {
             board[a] = String.valueOf(a + 1);
         }
     }
