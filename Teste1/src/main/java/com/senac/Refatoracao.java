@@ -20,7 +20,7 @@ public class Refatoracao {
         return salvaX(x) + salvaY(y);
     }*/
 
-    public static double soma(double n1, double n2){
-        return n1 + n2;
+    public static double soma(double numero1, double numero2){
+        return numero1 + numero2;
     }
 }
