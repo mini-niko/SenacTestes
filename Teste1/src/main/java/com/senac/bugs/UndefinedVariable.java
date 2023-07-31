@@ -1,4 +1,4 @@
-package com.senac;
+package com.senac.bugs;
 
 public class UndefinedVariable {
 

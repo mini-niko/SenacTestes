@@ -1,4 +1,4 @@
-package com.senac;
+package com.senac.bugs;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.senac;
+package com.senac.bugs;
 
 import java.io.File;
 import java.io.IOException;
