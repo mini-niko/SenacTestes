@@ -9,5 +9,8 @@
         <module name="Teste1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SenacTestes" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
