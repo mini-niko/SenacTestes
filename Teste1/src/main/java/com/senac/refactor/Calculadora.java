@@ -1,16 +1,20 @@
 package com.senac.refactor;
 
+import java.util.Scanner;
+
 public class Calculadora {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        String textOperation = (
+                "Qual operação deseja realizar?\n" +
+                "1. Soma\n" +
+                "2. Subração\n" +
+                "3. Multiplicação\n" +
+                "4. Divisão"
+        );
 
-        System.out.println("Qual operação deseja realizar?");
-        System.out.println("1. Soma");
-        System.out.println("2. Subtração");
-        System.out.println("3. Multiplicação");
-        System.out.println("4. Divisão");
-
+        System.out.println(textOperation);
         int operacao = sc.nextInt();
 
         System.out.println("Digite o primeiro número:");

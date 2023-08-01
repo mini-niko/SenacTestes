@@ -3,22 +3,18 @@ package com.senac.refactor;
 public class Circle {
 
     public double calculaAreaDoCirculo(double raio) {
-        double area = Math.PI * raio * raio;
-        return area;
+        return Math.PI * raio * raio;
     }
 
     public double calculaPerimetroDoCirculo(double raio) {
-        double perimetro = 2 * Math.PI * raio;
-        return perimetro;
+        return 2 * Math.PI * raio;
     }
 
     public double calculaVolumeDaEsfera(double raio) {
-        double volume = (4 * Math.PI * raio * raio * raio) / 3;
-        return volume;
+        return (4 * Math.PI * raio * raio * raio) / 3;
     }
 
     public double calculaAreaDaSuperficieDaEsfera(double raio) {
-        double area = 4 * Math.PI * raio * raio;
-        return area;
+        return 4 * Math.PI * raio * raio;
     }
 }
